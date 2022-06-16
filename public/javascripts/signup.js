@@ -1,8 +1,8 @@
 function signup() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirmpassword").value;
-    var email = document.getElementById("email").value;
+    var username = document.getElementById("username").value.trim();
+    var password = document.getElementById("password").value.trim();
+    var confirmPassword = document.getElementById("confirmpassword").value.trim();
+    var email = document.getElementById("email").value.trim();
     if (username == "" || password == "" || confirmPassword == "" || email == "") {
         alert("Please fill in all fields");
         return;

@@ -14,13 +14,15 @@ function signup() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (this.responseText == "success") {
-                window.location.href = "login.html";
-            }
-            else {
-                alert("Error occured while signing up");
-                window.location.href = "signup.html";
-            }
+            window.location.href = "login.html";
+        }
+        if (this.readyState == 4 && this.status == 401) {
+            alert("Username already exists");
+            window.location.href = "signup.html";
+        }
+        if (this.readyState == 4 && this.status == 500) {
+            alert("Error occured while signing up");
+            window.location.href = "signup.html";
         }
     };
     let signupdata = {

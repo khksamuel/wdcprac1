@@ -1,0 +1,3 @@
+From the schema I've designed in Task 1.1, we can see three tables: Rooms, Users, and Booking. And every column between them are not dependent to each other. For example, in the table Rooms, there are three columns: Room_ID, Type, and Image, and each of them are independent to each other. From this, we can tell that the database at least satisfy 2NF. 
+
+To make it not to satisfy 2NF, a way is to add a username column to the table Booking, which originally contains four columns: User_ID, Start_Date, End_Date, and Room_ID. The reason that make the username column dependent to other column is that the username can actually be obtained by referring to the User_ID column, that will cause it to not satisfy 2NF.

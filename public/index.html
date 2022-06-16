@@ -5,16 +5,42 @@
     <title>Get a room</title>
     <link rel="stylesheet" href="/public/stylesheets/style.css">
     <script src="https://kit.fontawesome.com/84be2b00fc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js" defer></script>
     <script src="/public/javascripts/home.js"></script>
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <div class="header">
             <a href="/public/index.html" class="logo"><i class="fa-solid fa-hotel fa-2xl"></i></a>
             <i class="fa-solid fa-user loginicon" onclick="account()"></i>
         </div>
-        <div class="content">
-            <!--  -->
+        <div class="content" id="content">
+            <!-- a drop down list to filter room type -->
+            <div class="filter">
+                <label for="filter">Filter by room type:</label>
+                <select name="filter" id="filter">
+                    <option value="all">All</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="Deluxe">Deluxe</option>
+                </select>
+            </div>
+            <div id="roomlist">
+                <div class="room" v-for="room in rooms">
+                    <div class="room-header">
+                        <p>{{room.type}}</p>
+                    </div>
+                    <div class="room-body">
+                        <div class="room-image">
+                            <img :src="room.image" alt="">
+                        </div>
+                        <div class="room-info">
+                            <p>{{room.description}}</p>
+                            <p>{{room.price}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

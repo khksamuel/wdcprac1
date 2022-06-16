@@ -1,10 +1,7 @@
 const vueinst = new Vue({
-    el: '#app',
+    el: '#content',
     data: {
-        
-    },
-    methods: {
-    
+        rooms: [[{type: 'single'}, {description: 'nice room'}, {price: 100}, {image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvttt3kj4ULLoJk1l3ZklSMW1RiGcXFfjYg&usqp=CAU'}]],
     }
 });
 

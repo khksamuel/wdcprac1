@@ -1,0 +1,25 @@
+.header {
+  background-color: #b7fdf4;
+  top: 0%;
+  left: 0%;
+  height: 10%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+ 
+.logo {
+  color: black;
+  font-size: 1.5em;
+  margin-left: 45%;
+}
+
+.loginicon {
+  color: black;
+  font-size: 1.5em;
+  right: 10%;
+  margin-right: 2%;
+}

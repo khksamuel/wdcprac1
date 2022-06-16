@@ -14,7 +14,7 @@
 .logo {
   color: black;
   font-size: 1.5em;
-  margin-left: 45%;
+  margin-left: 50%;
 }
 
 .loginicon {
@@ -22,4 +22,8 @@
   font-size: 1.5em;
   right: 10%;
   margin-right: 2%;
+}
+
+.content {
+  margin-top: 6%;
 }

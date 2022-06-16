@@ -1,0 +1,45 @@
+<!-- sign up page -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="/public/stylesheets/style.css">
+        <script src="https://kit.fontawesome.com/84be2b00fc.js" crossorigin="anonymous"></script>
+        <script src="/public/javascripts/signup.js"></script>
+    </head>
+    <body>
+        <div class="app">
+            <div class="header">
+                <a href="/public/index.html" class="logo"><i class="fa-solid fa-hotel fa-2xl"></i></a>
+                <i class="fa-solid fa-user loginicon" onclick="account()"></i>
+            </div>
+            <div class="content">
+                <div class="signup">
+                    <form action="">
+                        <div class="signup-header">
+                            <h1>Sign up</h1>
+                        </div>
+                        <div class="signup-body">
+                            <div class="signup-input">
+                                <label for="username">Username</label>
+                                <input type="text" name="username" id="username" placeholder="Username">
+                            </div>
+                            <div class="signup-input">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="signup-input">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="signup-input">
+                                <input type="submit" value="Sign up">
+                            </div>
+                        </div>
+                    </form>
+                    <p>Already have an account? <a href="/public/login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
